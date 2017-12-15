@@ -25,8 +25,9 @@ export class Report {
         customDropdowns: this.createDropdownConfig()
       },
       facets: [{
-        key: 'main',
-        attributes: ['displayName', 'type', 'description'],
+        key: 'main7',
+        attributes: ['displayName', 'type', '... on Application { numberOfApplications }'],
+        fixedFactSheetType: 'Application',
         callback: function (data) {
           this.data = data;
           this.groups = _.groupBy(data, 'type');
