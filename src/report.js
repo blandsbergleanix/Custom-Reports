@@ -25,8 +25,8 @@ export class Report {
         customDropdowns: this.createDropdownConfig()
       },
       facets: [{
-        key: 'main7',
-        attributes: ['displayName', 'type', '... on Application { numberOfApplications }'],
+        key: 'main',
+        attributes: ['displayName', 'type', '... on Application { numberOfApplications, numberOfApplicationsMinus30,  numberOfApplicationsMinus90, numberOfDataObjects, numberOfDataObjectsMinus30, numberOfDataObjectsMinus90}'],
         fixedFactSheetType: 'Application',
         callback: function (data) {
           this.data = data;
